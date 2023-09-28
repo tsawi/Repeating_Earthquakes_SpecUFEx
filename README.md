@@ -1,0 +1,2 @@
+# Repeating_Earthquakes_SpecUFEx
+Dectecting repeating earthquake sequences with SpecUFEx
