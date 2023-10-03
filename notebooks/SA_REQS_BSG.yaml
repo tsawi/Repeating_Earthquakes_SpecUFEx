@@ -1,0 +1,46 @@
+---
+# Paths
+paths:
+      key: "SA_REQS_BSG" # for filenames mainly now.
+      projectPath: "../" # path to the main project directory
+      pathCat:     "../data/catalogs/catall.txt" # path to where the catalog resides, including the file name
+      pathCatFold:     "../data/catalogs/" # path to where the catalog resides, including the file name
+      pathWF:      "path/to/waveforms/" # path to directory where the waveform files are
+      h5name: 'SA_REQS_BSG.h5' # if we want it to be different from the key !
+
+# Raw data parameters
+dataParams:
+      network: 'NC' # SEED format for network, station, channel
+      station: 'BSG'
+      channel: 'EHZ'
+      channel_ID: 0 # the index number for an obspy stream object
+      sampling_rate: 100 #Hz
+      filetype: '' #.SAC .txt
+
+# Spectrogram parameters
+sgramParams:
+      sgramType: "spectrogram"
+      fmin: 2 # minimum frequency in the spectrogram
+      fmax: 17 # maximum frequency in the spectrogram
+      winLen_Sec:  .5 # window length in seconds
+      fracOverlap: .99 # MAXIMUM ALLOWED
+      nfft: 2048  # padding #
+      tmin: 4 # seconds cut off begining of record
+      tmax: 14 # after this time, cut off record
+#sgramType: "scalogram" # if you are using wavelets
+  # other wavelet-specific parameters
+#sgramType: "CSN" # if using CovSeisNet output
+  # other CSN-specific parameters
+
+# SpecUFEx parameters
+specufexParams:
+      N_patterns_NMF: 75 # initiate NMF with this many N_patterns (max, then shrinks)
+      nmf_batchsz: 100000 # batch size for nmf fit
+      nmf_nbatch: 1 # number of batches
+      N_states_HMM: 15 # number of states for HMM (fixed at this value)
+      hmm_batchsz: 100000 #batch size for hmm fit
+      hmm_nbatch: 1 # number of batches
+
+
+
+... # three dots ends the yaml file
