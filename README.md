@@ -50,7 +50,7 @@ Repeating_Earthquakes_SpecUFEx/
 
 6. **Cluster the fingerprints:** Cluster the fingerprints for each station and filter by magnitude and location criteria (i.e., earthquakes in clusters must be closely located to be considered potential RES). Execute the code blocks in the Jupyter Notebook `notebooks/2_ClusterWorkflow_BSG_v2.ipynb` for each station. Output will be a catalog, e.g., "SA_REQS_v28_BSG_updatedCat_MaxExp_WSloc_2.csv".
 
-7. **Merge all catalogs of potential RES:** Execute the code blocks in the Jupyter Notebook `notebooks/3_Combine_Cats_HypoDD.ipynb`. The outputs are folders for each potential RES that are formatted as input for HypoDD.
+7. **Merge all catalogs of potential RES:** Execute the code blocks in the Jupyter Notebook `notebooks/3_Combine_Cats_HypoDD.ipynb`. The outputs are folders for each potential RES that are formatted as input for HypoDD, and the catalog `reloc_cat_final_Rx0_1Stations_20230325.csv`.
 
 8. **Relocate the individual potential RES:** Relocate the individual potential RES using HypoDD. HypoDD software can be found at [HypoDD Software](https://www.ldeo.columbia.edu/~felixw/hypoDD.html).
 
