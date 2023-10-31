@@ -24,7 +24,7 @@ Below is the project file directory for generating and clustering fingerprints t
 9. **Manually check the clusters:** Manually check the clusters for overlapping rupture areas.
 
 
-
+```
 Repeating_Earthquakes_SpecUFEx/
 |
 ├── data/
@@ -54,7 +54,7 @@ Repeating_Earthquakes_SpecUFEx/
 │
 ├── README.md
 ├── LICENSE
-
+```
 
 
 ### Works Cited:
